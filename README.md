@@ -18,21 +18,21 @@ Here’s a quick example to get you started with DialogicAI:
 from dialogicai import DialogicAI
 
 # Initialize the DialogicAI instance
-dialogAI = DialogicAI()
+dialogicAI = DialogicAI()
 
 # Add some messages
-dialogAI.add_message({"content": "Hello, how are you?", "role": "user"})
-dialogAI.add_message({"content": "I'm doing well, thank you! How can I assist you today?", "role": "assistant"})
+dialogicAI.add_message({"content": "Hello, how are you?", "role": "user"})
+dialogicAI.add_message({"content": "I'm doing well, thank you! How can I assist you today?", "role": "assistant"})
 
 # Branch the conversation
-dialogAI.add_message({
+dialogicAI.add_message({
     "content": "Can you tell me a joke?", 
     "role": "user",
     "metadata": {"branches": ["joke"]}
 })
 
 # Convert the thread to a list of dictionaries
-conversation = dialogAI.thread_to_list()
+conversation = dialogicAI.thread_to_list()
 print(conversation)
 ```
 
@@ -49,7 +49,7 @@ This method adds a new message to the current conversation thread.
   
 - **Usage Example**:
   ```python
-  dialogAI.add_message({"content": "Hello, how are you?", "role": "user"})
+  dialogicAI.add_message({"content": "Hello, how are you?", "role": "user"})
   ```
 
 
@@ -61,7 +61,7 @@ Switches the current conversation to a different branch, allowing you to manage 
   
 - **Usage Example**:
   ```python
-  dialogAI.change_branch("joke")
+  dialogicAI.change_branch("joke")
   ```
 
 
@@ -73,7 +73,7 @@ Retrieves the last message in the current branch, making it easy to continue a c
   
 - **Usage Example**:
   ```python
-  last_message = dialogAI.get_last_message()
+  last_message = dialogicAI.get_last_message()
   print(last_message.content)
   ```
 
@@ -85,7 +85,7 @@ Converts the entire conversation thread into a list of dictionaries, making it s
   
 - **Usage Example**:
   ```python
-  conversation_list = dialogAI.thread_to_list()
+  conversation_list = dialogicAI.thread_to_list()
   print(conversation_list)
   ```
 
