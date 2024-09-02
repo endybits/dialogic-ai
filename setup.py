@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dialogic-ai',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(include=['dialogic_ai', 'dialogic_ai.*']),
     install_requires=[
     ],
