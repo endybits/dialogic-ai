@@ -15,7 +15,7 @@ pip install dialogic-ai
 Here’s a quick example to get you started with DialogicAI:
 
 ```python
-from dialogicai import DialogicAI
+from dialogicai.core import DialogicAI
 
 # Initialize the DialogicAI instance
 dialogicAI = DialogicAI()

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dialogic-ai',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(include=['dialogic_ai', 'dialogic_ai.*']),
     install_requires=[
     ],
@@ -26,5 +26,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.8',
-    keywords="conversational AI, chat, chatbot, threaded conversations, AI, NLP, branching dialogues, dialogic, AI", 
+    keywords="conversational AI, chat, chatbot, threaded conversations, AI, NLP, branching dialogues, dialogicai, dialogic-ai", 
 )
