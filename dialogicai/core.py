@@ -102,7 +102,7 @@ class DialogicAI:
             NodeMessage: The message with the specified ID.
         """
         for message in self.thread:
-            if message.message_id == message_id:
+            if message.metadata.message_id == message_id:
                 return message
         return None
     
