@@ -3,18 +3,17 @@ from setuptools import setup, find_packages
 setup(
     name='dialogic-ai',
     version='0.0.1',
-    pachages=find_packages(),
+    packages=find_packages(include=['dialogic_ai', 'dialogic_ai.*']),
     install_requires=[
-        "setuptools==74.0.0",
     ],
     extras_require={
-        "dev": [
-            "pytest==8.3.2",
-            "black==24.8.0",
+        'dev': [
+            "pytest>=8.3.2",
+        "black>=24.8.0"
         ],
-    },
+    },  
     include_package_data=True,
-    license="MIT",
+    license='MIT',
     description="A Python package designed to manage complex, threaded conversations with branching capabilities, much like version control systems manage code branches.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -27,4 +26,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.8',
+    keywords="conversational AI, chat, chatbot, threaded conversations, AI, NLP, branching dialogues, dialogic, AI", 
 )

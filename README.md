@@ -7,7 +7,7 @@
 You can install DialogicAI directly from PyPI using pip:
 
 ```bash
-pip install dialogicai
+pip install dialogic-ai
 ```
 
 ## 🏃‍♂️ Quick Start
